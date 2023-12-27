@@ -1,0 +1,36 @@
+.btn {
+  &--outline {
+    &:link,
+    &:visited {
+      padding: 1.3rem 2.2rem;
+      border: 2px solid $medium-gray;
+      border-radius: 14px;
+    }
+
+    &:hover,
+    &:active {
+      border-color: $almost-black;
+    }
+  }
+
+  &--black {
+    &:link,
+    &:visited {
+      background-color: $almost-black;
+      color: $almost-white;
+      font-size: 1.8rem;
+      font-weight: $weight-medium;
+      letter-spacing: -0.25px;
+      padding: 1.5rem 3rem;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      color: $almost-black;
+      background-color: $almost-white;
+      outline: 1px solid $almost-black;
+    }
+  }
+}

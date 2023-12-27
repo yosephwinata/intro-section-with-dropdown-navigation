@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Intro Section with Dropdown Navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="/images/logo.svg" alt="Logo" class="navbar__logo" />
+        <div class="navbar__items--left">
+          <a href="#" class="navbar__dropdown" id="features-dropdown">
+            <span class="navbar__text">Features</span>
+            <img
+              src="/images/icon-arrow-down.svg"
+              alt="Arrow down icon"
+              class="navbar__arrow-icon"
+            />
+            <div class="navbar-popup hidden" id="features-popup">
+              <div class="navbar-popup__container">
+                <img
+                  src="/images/icon-todo.svg"
+                  alt="Todo Icon"
+                  class="navbar-popup__icon"
+                />
+                <span class="navbar-popup__text">Todo List</span>
+              </div>
+              <div class="navbar-popup__container">
+                <img
+                  src="/images/icon-calendar.svg"
+                  alt="Todo Icon"
+                  class="navbar-popup__icon"
+                />
+                <span class="navbar-popup__text">Calendar</span>
+              </div>
+              <div class="navbar-popup__container">
+                <img
+                  src="/images/icon-reminders.svg"
+                  alt="Todo Icon"
+                  class="navbar-popup__icon"
+                />
+                <span class="navbar-popup__text">Reminders</span>
+              </div>
+              <div class="navbar-popup__container">
+                <img
+                  src="/images/icon-planning.svg"
+                  alt="Todo Icon"
+                  class="navbar-popup__icon"
+                />
+                <span class="navbar-popup__text">Planning</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="navbar__dropdown">
+            <span class="navbar__text">Company</span>
+            <img
+              src="/images/icon-arrow-down.svg"
+              alt="Arrow down icon"
+              class="navbar__arrow-icon"
+            />
+          </a>
+          <a href="#" class="navbar__text">Careers</a>
+          <a href="#" class="navbar__text">About</a>
+        </div>
+        <div class="navbar__items--right">
+          <a href="#" class="navbar__text">Login</a>
+          <a href="#" class="navbar__text btn--outline">Register</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <img
+          src="/images/image-hero-desktop.png"
+          alt="Hero Image"
+          class="hero__illustration"
+        />
+        <h1 class="heading-primary hero__title">Make remote work</h1>
+        <p class="hero__description">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="btn--black hero__button">Learn more</a>
+        <div class="hero__clients">
+          <img src="/images/client-databiz.svg" alt="Client Logo" />
+          <img src="/images/client-audiophile.svg" alt="Client Logo" />
+          <img src="/images/client-meet.svg" alt="Client Logo" />
+          <img src="/images/client-maker.svg" alt="Client Logo" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
