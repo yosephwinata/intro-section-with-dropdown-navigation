@@ -29,61 +29,76 @@
     <header class="header">
       <nav class="navbar">
         <img src="/images/logo.svg" alt="Logo" class="navbar__logo" />
-        <div class="navbar__items--left">
-          <a href="#" class="navbar__dropdown" id="features-dropdown">
-            <span class="navbar__text" id="features-text">Features</span>
-            <img
-              src="/images/icon-arrow-down.svg"
-              alt="Arrow down icon"
-              class="navbar__arrow-icon"
-              id="features-arrow"
-            />
-            <div class="navbar-popup popup-hide" id="features-popup">
-              <div class="navbar-popup__container">
-                <img
-                  src="/images/icon-todo.svg"
-                  alt="Todo Icon"
-                  class="navbar-popup__icon"
-                />
-                <span class="navbar-popup__text">Todo List</span>
+        <ul class="navbar__items--left">
+          <li class="navbar__dropdown" data-popup="features-popup">
+            <a href="#">
+              <span class="navbar__text" id="features-text">Features</span>
+              <img
+                src="/images/icon-arrow-down.svg"
+                alt="Arrow down icon"
+                class="navbar__arrow-icon"
+                id="features-arrow"
+              />
+
+              <!-- popup -->
+              <div
+                class="navbar-popup navbar-popup--align-right popup-hide"
+                id="features-popup"
+              >
+                <div class="navbar-popup__container">
+                  <div class="navbar-popup__icon-container">
+                    <img src="/images/icon-todo.svg" alt="Todo Icon" />
+                  </div>
+                  <span class="navbar-popup__text">Todo List</span>
+                </div>
+                <div class="navbar-popup__container">
+                  <div class="navbar-popup__icon-container">
+                    <img src="/images/icon-calendar.svg" alt="Todo Icon" />
+                  </div>
+                  <span class="navbar-popup__text">Calendar</span>
+                </div>
+                <div class="navbar-popup__container">
+                  <div class="navbar-popup__icon-container">
+                    <img src="/images/icon-reminders.svg" alt="Todo Icon" />
+                  </div>
+                  <span class="navbar-popup__text">Reminders</span>
+                </div>
+                <div class="navbar-popup__container">
+                  <div class="navbar-popup__icon-container">
+                    <img src="/images/icon-planning.svg" alt="Todo Icon" />
+                  </div>
+                  <span class="navbar-popup__text">Planning</span>
+                </div>
               </div>
-              <div class="navbar-popup__container">
-                <img
-                  src="/images/icon-calendar.svg"
-                  alt="Todo Icon"
-                  class="navbar-popup__icon"
-                />
-                <span class="navbar-popup__text">Calendar</span>
-              </div>
-              <div class="navbar-popup__container">
-                <img
-                  src="/images/icon-reminders.svg"
-                  alt="Todo Icon"
-                  class="navbar-popup__icon"
-                />
-                <span class="navbar-popup__text">Reminders</span>
-              </div>
-              <div class="navbar-popup__container">
-                <img
-                  src="/images/icon-planning.svg"
-                  alt="Todo Icon"
-                  class="navbar-popup__icon"
-                />
-                <span class="navbar-popup__text">Planning</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="navbar__dropdown">
-            <span class="navbar__text">Company</span>
-            <img
-              src="/images/icon-arrow-down.svg"
-              alt="Arrow down icon"
-              class="navbar__arrow-icon"
-            />
-          </a>
-          <a href="#" class="navbar__text">Careers</a>
-          <a href="#" class="navbar__text">About</a>
-        </div>
+            </a>
+          </li>
+          <li class="navbar__dropdown" data-popup="company-popup">
+            <a href="#">
+              <span class="navbar__text">Company</span>
+              <img
+                src="/images/icon-arrow-down.svg"
+                alt="Arrow down icon"
+                class="navbar__arrow-icon"
+              />
+            </a>
+
+            <!-- popup -->
+            <ul
+              class="navbar-popup navbar-popup--align-left popup-hide"
+              id="company-popup"
+            >
+              <li class="navbar-popup__text">History</li>
+              <li class="navbar-popup__text">Our Team</li>
+              <li class="navbar-popup__text">Blog</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="navbar__text">Careers</a>
+          </li>
+          <li>
+            <a href="#" class="navbar__text">About</a>
+          </li>
+        </ul>
         <div class="navbar__items--right">
           <a href="#" class="navbar__text">Login</a>
           <a href="#" class="navbar__text btn--outline">Register</a>

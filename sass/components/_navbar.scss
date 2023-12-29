@@ -74,17 +74,23 @@
 
 .navbar-popup {
   display: none;
-  // position: absolute;
   opacity: 0;
   background-color: $almost-white;
   padding: 2.4rem;
   border-radius: 10px;
   position: absolute;
   bottom: -1.5rem;
-  right: 0;
   transform: translateY(100%);
   z-index: 10;
   box-shadow: 0 1.5rem 2.5rem rgba(180, 180, 180, 0.5);
+
+  &--align-left {
+    left: 0;
+  }
+
+  &--align-right {
+    right: 0;
+  }
 
   &.popup-show {
     display: flex;
@@ -100,17 +106,21 @@
   &__container {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 1.5rem;
-    width: 11rem;
   }
 
-  &__icon {
+  &__icon-container {
     width: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__text {
     color: $medium-gray;
     font-size: 1.4rem;
     font-weight: $weight-medium;
+    white-space: nowrap;
   }
 }
