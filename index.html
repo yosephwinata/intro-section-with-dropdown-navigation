@@ -30,7 +30,12 @@
       <nav class="navbar">
         <img src="/images/logo.svg" alt="Logo" class="navbar__logo" />
         <ul class="navbar__items--left">
-          <li class="navbar__dropdown" data-popup="features-popup">
+          <li
+            class="navbar__dropdown"
+            data-popup="features-popup"
+            data-text="features-text"
+            data-arrow="features-arrow"
+          >
             <a href="#">
               <span class="navbar__text" id="features-text">Features</span>
               <img
@@ -72,13 +77,19 @@
               </div>
             </a>
           </li>
-          <li class="navbar__dropdown" data-popup="company-popup">
+          <li
+            class="navbar__dropdown"
+            data-popup="company-popup"
+            data-text="company-text"
+            data-arrow="company-arrow"
+          >
             <a href="#">
-              <span class="navbar__text">Company</span>
+              <span class="navbar__text" id="company-text">Company</span>
               <img
                 src="/images/icon-arrow-down.svg"
                 alt="Arrow down icon"
                 class="navbar__arrow-icon"
+                id="company-arrow"
               />
             </a>
 
